@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="36da92f4-bfb9-4b72-8f12-82efb9eda37d" name="Default Changelist" comment="" />
+    <list default="true" id="6f8bd7a6-3890-4ba4-870c-a3d5bafefe1e" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="1SpjXmGPqVsgivd2YJryt2V0OYd" />
+  <component name="ProjectId" id="1SpkM19iU2u84MBdmCpM8VewYoD" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Exercise1/code" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -22,30 +25,24 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="pytest in NeuralNetworkTests.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/NeuralNetworkTests.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.main" />
+        <item itemvalue="Python tests.pytest in NeuralNetworkTests.py" />
       </list>
     </recent_temporary>
   </component>
@@ -54,11 +51,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="36da92f4-bfb9-4b72-8f12-82efb9eda37d" name="Default Changelist" comment="" />
-      <created>1572267473167</created>
+      <changelist id="6f8bd7a6-3890-4ba4-870c-a3d5bafefe1e" name="Default Changelist" comment="" />
+      <created>1572267873433</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1572267473167</updated>
+      <updated>1572267873433</updated>
     </task>
     <servers />
   </component>

@@ -67,7 +67,6 @@ class Circle:
     def draw(self):
         yy, xx = np.ogrid[:self.resolution, :self.resolution]
         circle = (xx - self.position[0]) ** 2 + (yy - self.position[1]) ** 2 <= self.radius ** 2
-        print(circle)
         self.output[circle] = 1
         copy = np.copy(self.output)
         return copy
@@ -76,6 +75,3 @@ class Circle:
         plt.title('Circle')
         plt.imshow(self.output, cmap='bone')
         plt.show()
-
-test = Circle(100, 2, (2, 2))
-test.draw()
