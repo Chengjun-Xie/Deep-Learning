@@ -6,7 +6,7 @@ class FullyConnected:
     def __init__(self, input_size, output_size):
         self.input_size = input_size    # n
         self.output_size = output_size  # m
-        self._optimizer = Optimizers.Sgd()   # optimizations method
+        self._optimizer = Optimizers.Sgd()   # optimizations method (default: SGD)
 
         # The member for the weights and biases should be named weights
         # weights ∈ (n+1)*m
@@ -18,8 +18,8 @@ class FullyConnected:
     def get_gradient_weights(self):
         return self.gradient_weight
 
-    def set_optimizer(self,value):
-        self._optimizer.learning_rate = value
+    def set_optimizer(self, value):
+        self._optimizer = value
 
     """
     returns the input tensor for the next layer.

@@ -1,4 +1,5 @@
 import numpy as np
+from Optimization import Optimizers
 
 
 class NeuralNetwork:
@@ -40,7 +41,9 @@ class NeuralNetwork:
     Make sure you append this layer to the list layers afterwards.
     """
     def append_trainable_layer(self, layer):
-        layer.set_optimizer(1e-03)
+        # pass in a sgd object to FullyConnected
+        sgd_ob = Optimizers.Sgd(1e-03)
+        layer.set_optimizer(sgd_ob)
         self.layers.append(layer)
 
     """
