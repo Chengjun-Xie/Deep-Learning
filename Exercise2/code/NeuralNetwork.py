@@ -41,9 +41,8 @@ class NeuralNetwork:
     Make sure you append this layer to the list layers afterwards.
     """
     def append_trainable_layer(self, layer):
-        # pass in a sgd object to FullyConnected
-        sgd_ob = Optimizers.Sgd(1e-03)
-        layer.set_optimizer(sgd_ob)
+        # pass in a object to FullyConnected
+        layer.set_optimizer(self.optimizer)
         self.layers.append(layer)
 
     """
