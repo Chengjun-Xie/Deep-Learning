@@ -1,5 +1,6 @@
 import numpy as np
 import scipy.signal
+import copy
 
 
 class Conv:
@@ -15,10 +16,10 @@ class Conv:
         self.num_kernels = num_kernels  # integer value
 
         self.weights = np.random.rand(self.num_kernels, *self.convolution_shape)
-        self.bias = np.random.rand(self.num_kernels) # element-wise addition of a scalar value for every kernel
+        self.bias = np.random.rand(self.num_kernels)    # element-wise addition of a scalar value for every kernel
 
-        self.gradient_weights = None
-        self.gradient_bias = None
+        self.gradient_weights = np.zeros(self.weights.shape)
+        self.gradient_bias = np.zeros(self.bias.shape)
         self.input_tensor = None
 
         self._optimizer = None  # optimizations method
@@ -51,13 +52,13 @@ class Conv:
                 # only the middle channel is valid
                 tensor = scipy.signal.correlate(input_tensor[i], self.weights[j], 'same')
 
-                valid_channel = int(self.convolution_shape[0] / 2)
+                valid_channel = self.convolution_shape[0] // 2
                 tensor = tensor[valid_channel]
                 tensor += self.bias[j]
 
                 # stride (upsampling)
                 if len(self.stride_shape) == 1:
-                     tensor = tensor[::self.stride_shape[0]]
+                    tensor = tensor[::self.stride_shape[0]]
                 else:
                     tensor = tensor[::self.stride_shape[0], ::self.stride_shape[1]]
 
@@ -65,7 +66,6 @@ class Conv:
             batch.append(channel)
         output = np.array(batch)
 
-        self.gradient_weights = np.copy(input_tensor)
         return output
 
     """
@@ -74,8 +74,16 @@ class Conv:
     return ∈ (b, channel, spatial dimension of input_tensor)
     """
     def backward(self, error_tensor):
+        # initialize gradient_weights and gradient_bias !!!
+        self.gradient_weights = np.zeros(self.weights.shape)
+        self.gradient_bias = np.zeros(self.bias.shape)
+
         # ==== Part1: Gradient with respect to lower layers ====
-        # kernel part
+        """
+        kernel modify
+        input:  weights ∈ (num_kernel, channel, spatial dimension)
+        output: kernel ∈ (channel, num_kernel, spatial dimension)
+        """
         weights_channel = []
         for i in range(self.convolution_shape[0]):
             weights_kernel = []
@@ -83,16 +91,9 @@ class Conv:
                 weights_kernel.append(self.weights[j, i])
             weights_channel.append(weights_kernel)
         gradient_layer_kernel = np.array(weights_channel)
-        gradient_layer_kernel = np.flip(gradient_layer_kernel, axis=0)  # channel dimension needs to be flipped
+        gradient_layer_kernel = np.flip(gradient_layer_kernel, axis=1)  # channel dimension needs to be flipped
 
-        # padding (for Part2)
-        padding_shape = 0
-        if len(self.stride_shape) == 1:
-            padding_shape = int(self.convolution_shape[1] / 2)
-        else:
-            padding_shape = (int(self.convolution_shape[1] / 2), int(self.convolution_shape[2] / 2))
-        input_tensor_padding = np.pad(self.gradient_weights, padding_shape, 'constant', constant_values=(0, 0))
-
+        # compute gradients
         batch = []
         for i in range(error_tensor.shape[0]):
             channel = []
@@ -111,19 +112,52 @@ class Conv:
             # convolution along input_channel
             for j in range(gradient_layer_kernel.shape[0]):
                 tensor = scipy.signal.convolve(error_tensor_restride, gradient_layer_kernel[j], 'same')
-                valid_channel = int(error_tensor.shape[1] / 2)
+                valid_channel = error_tensor.shape[1] // 2
                 tensor = tensor[valid_channel]
-
                 channel.append(tensor)
 
             # ==== Part2:  Gradient with respect to the weights
             # convolution along num_kernel
+            gradient_kernel = []
+            gradient_bias = []
 
+            # padding
+            if len(self.stride_shape) == 1:
+                padding_shape = ((0, 0),
+                                 (self.convolution_shape[1] // 2, (self.convolution_shape[1] - 1) // 2))
+            else:
+                padding_shape = ((0, 0),
+                                 (self.convolution_shape[1] // 2, (self.convolution_shape[1] - 1) // 2),
+                                 (self.convolution_shape[2] // 2, (self.convolution_shape[2] - 1) // 2))
+            input_tensor_padding = np.pad(self.input_tensor[i], padding_shape, 'constant')
 
+            for k in range(self.num_kernels):
+                # weights
+                # expand (y, x) into (1, y, x) to have same dimension as input_tensor_padding
+                temp_tensor = np.expand_dims(error_tensor_restride[k], axis=0)
+                gradient_tensor = scipy.signal.correlate(input_tensor_padding, temp_tensor, 'valid')
+                gradient_kernel.append(gradient_tensor)
+
+                # bias
+                gradient_bias.append(error_tensor[i, k].sum())
+
+            gradient_weights = np.array(gradient_kernel)
+            gradient_bias = np.array(gradient_bias)
+
+            # sum up gradient_weights and gradient_bias of each batch
+            self.gradient_weights += gradient_weights
+            self.gradient_bias += gradient_bias
 
             batch.append(channel)
-
         output_tensor = np.array(batch)
+
+        # update
+        if (self._optimizer != None):
+            weights_optimizer = copy.deepcopy(self._optimizer)
+            bias_optimizer = copy.deepcopy(self._optimizer)
+            self.weights = weights_optimizer.calculate_update(self.weights, self.gradient_weights)
+            self.bias = bias_optimizer.calculate_update(self.bias, self.gradient_bias)
+
         return output_tensor
 
     """
