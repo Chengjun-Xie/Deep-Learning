@@ -1,0 +1,484 @@
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 90.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 56.761268781302164%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 67.4457429048414%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 24.540901502504173%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 25.542570951585976%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 20.534223706176963%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 56.594323873121866%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 76.46076794657763%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 7.0116861435726205%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 90.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 94.99165275459099%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 95.32554257095158%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 95.15859766277129%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 96.16026711185309%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 94.65776293823038%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset, we achieve an accuracy of: 90.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 94.99165275459099%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the UCI ML hand-written digits dataset, we achieve an accuracy of: 95.65943238731218%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset using Dropout, we achieve an accuracy of: 60.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the UCI ML hand-written digits dataset using ADAM we achieve an accuracy of: 97.9966611018364%
+On the UCI ML hand-written digits dataset using L1_regularizer we achieve an accuracy of: 96.16026711185309%
+On the UCI ML hand-written digits dataset using L2_regularizer we achieve an accuracy of: 97.8297161936561%
+On the UCI ML hand-written digits dataset using Dropout we achieve an accuracy of: 87.47913188647746%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset using Dropout, we achieve an accuracy of: 52.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the UCI ML hand-written digits dataset using ADAM we achieve an accuracy of: 98.1636060100167%
+On the UCI ML hand-written digits dataset using L1_regularizer we achieve an accuracy of: 96.4941569282137%
+On the UCI ML hand-written digits dataset using L2_regularizer we achieve an accuracy of: 98.1636060100167%
+On the UCI ML hand-written digits dataset using Dropout we achieve an accuracy of: 85.14190317195326%
+On the Iris dataset, we achieve an accuracy of: 92.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset using Dropout, we achieve an accuracy of: 54.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the UCI ML hand-written digits dataset using ADAM we achieve an accuracy of: 97.49582637729549%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset using Dropout, we achieve an accuracy of: 48.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the UCI ML hand-written digits dataset using ADAM we achieve an accuracy of: 97.32888146911519%
+On the UCI ML hand-written digits dataset using L1_regularizer we achieve an accuracy of: 97.49582637729549%
+On the UCI ML hand-written digits dataset using L2_regularizer we achieve an accuracy of: 97.8297161936561%
+On the UCI ML hand-written digits dataset using Dropout we achieve an accuracy of: 85.80968280467445%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset using Dropout, we achieve an accuracy of: 56.00000000000001%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset using Batchnorm, we achieve an accuracy of: 76.0%
+On the Iris dataset using Dropout, we achieve an accuracy of: 60.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the UCI ML hand-written digits dataset using Batch_norm and L2 we achieve an accuracy of: 97.8297161936561%
+On the UCI ML hand-written digits dataset using Batch_norm we achieve an accuracy of: 97.32888146911519%
+On the UCI ML hand-written digits dataset using ADAM we achieve an accuracy of: 96.4941569282137%
+On the UCI ML hand-written digits dataset using L1_regularizer we achieve an accuracy of: 96.16026711185309%
+On the UCI ML hand-written digits dataset using L2_regularizer we achieve an accuracy of: 96.4941569282137%
+On the UCI ML hand-written digits dataset using Dropout we achieve an accuracy of: 86.81135225375625%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset using Batchnorm, we achieve an accuracy of: 96.0%
+On the Iris dataset using Dropout, we achieve an accuracy of: 72.0%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the UCI ML hand-written digits dataset using Batch_norm and L2 we achieve an accuracy of: 98.6644407345576%
+On the UCI ML hand-written digits dataset using Batch_norm we achieve an accuracy of: 97.32888146911519%
+On the UCI ML hand-written digits dataset using ADAM we achieve an accuracy of: 95.99332220367279%
+On the UCI ML hand-written digits dataset using L1_regularizer we achieve an accuracy of: 98.33055091819699%
+On the UCI ML hand-written digits dataset using L2_regularizer we achieve an accuracy of: 95.65943238731218%
+On the UCI ML hand-written digits dataset using Dropout we achieve an accuracy of: 85.97662771285476%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset using Batchnorm, we achieve an accuracy of: 96.0%
+On the Iris dataset using Dropout, we achieve an accuracy of: 52.0%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the UCI ML hand-written digits dataset using Batch_norm and L2 we achieve an accuracy of: 96.16026711185309%
+On the UCI ML hand-written digits dataset using Batch_norm we achieve an accuracy of: 97.16193656093489%
+On the UCI ML hand-written digits dataset using ADAM we achieve an accuracy of: 96.4941569282137%
+On the UCI ML hand-written digits dataset using L1_regularizer we achieve an accuracy of: 97.32888146911519%
+On the UCI ML hand-written digits dataset using L2_regularizer we achieve an accuracy of: 96.661101836394%
+On the UCI ML hand-written digits dataset using Dropout we achieve an accuracy of: 81.80300500834724%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the Iris dataset using Batchnorm, we achieve an accuracy of: 100.0%
+On the Iris dataset using Dropout, we achieve an accuracy of: 57.99999999999999%
+On the Iris dataset, we achieve an accuracy of: 98.0%
+On the UCI ML hand-written digits dataset using Batch_norm and L2 we achieve an accuracy of: 98.33055091819699%
+On the UCI ML hand-written digits dataset using Batch_norm we achieve an accuracy of: 97.32888146911519%
+On the Iris dataset, we achieve an accuracy of: 100.0%
+On the Iris dataset, we achieve an accuracy of: 96.0%
+On the Iris dataset using Batchnorm, we achieve an accuracy of: 98.0%
+On the Iris dataset using Dropout, we achieve an accuracy of: 48.0%
+On the Iris dataset, we achieve an accuracy of: 94.0%
+On the UCI ML hand-written digits dataset using Batch_norm and L2 we achieve an accuracy of: 97.66277128547578%
+On the UCI ML hand-written digits dataset using Batch_norm we achieve an accuracy of: 97.8297161936561%
+On the UCI ML hand-written digits dataset using ADAM we achieve an accuracy of: 96.661101836394%
+On the UCI ML hand-written digits dataset using L1_regularizer we achieve an accuracy of: 97.49582637729549%
+On the UCI ML hand-written digits dataset using L2_regularizer we achieve an accuracy of: 95.49248747913188%
+On the UCI ML hand-written digits dataset using Dropout we achieve an accuracy of: 85.30884808013356%
