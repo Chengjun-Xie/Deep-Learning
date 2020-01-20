@@ -35,9 +35,13 @@ class NeuralNetwork(Base.Phase):
     def forward(self):
         input_tensor, self.label_tensor = self.data_layer.forward()
         tensor = np.copy(input_tensor)
+        loss = 0
         for it in self.layers:
+            if self.optimizer.regularizer is not None:
+                if hasattr(it, 'weights'):
+                    loss += self.optimizer.regularizer.norm(it.weights)
             tensor = it.forward(tensor)
-        loss = self.loss_layer.forward(tensor, self.label_tensor)
+        loss += self.loss_layer.forward(tensor, self.label_tensor)
         return loss
 
     """
@@ -76,6 +80,7 @@ class NeuralNetwork(Base.Phase):
     def test(self, input_tensor):
         tensor = np.copy(input_tensor)
         for it in self.layers:
+            it.phase = Base.Phase.test
             tensor = it.forward(tensor)
         return tensor
 

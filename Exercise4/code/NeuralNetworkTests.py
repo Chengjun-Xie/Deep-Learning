@@ -844,7 +844,7 @@ class TestConstraints(unittest.TestCase):
         weights_tensor = np.ones(self.shape)
         weights_tensor[1:3, 2:4] *= -1
 
-        optimizer = Optimizers.SgdWithMomentum(2)
+        optimizer = Optimizers.SgdWithMomentum(2,0.9)
         regularizer = Constraints.L1_Regularizer(2)
         optimizer.add_regularizer(regularizer)
 
@@ -857,7 +857,7 @@ class TestConstraints(unittest.TestCase):
         weights_tensor = np.ones(self.shape)
         weights_tensor[1:3, 2:4] *= -1
 
-        optimizer = Optimizers.SgdWithMomentum(2)
+        optimizer = Optimizers.SgdWithMomentum(2,0.9)
         regularizer = Constraints.L2_Regularizer(2)
         optimizer.add_regularizer(regularizer)
 
@@ -870,7 +870,7 @@ class TestConstraints(unittest.TestCase):
         weights_tensor = np.ones(self.shape)
         weights_tensor[1:3, 2:4] *= -1
 
-        optimizer = Optimizers.Adam(2)
+        optimizer = Optimizers.Adam(2, 0.9, 0.999)
         regularizer = Constraints.L1_Regularizer(2)
         optimizer.add_regularizer(regularizer)
 
@@ -883,7 +883,7 @@ class TestConstraints(unittest.TestCase):
         weights_tensor = np.ones(self.shape)
         weights_tensor[1:3, 2:4] *= -1
 
-        optimizer = Optimizers.Adam(2)
+        optimizer = Optimizers.Adam(2, 0.9, 0.999)
         regularizer = Constraints.L2_Regularizer(2)
         optimizer.add_regularizer(regularizer)
 
@@ -917,7 +917,7 @@ class TestDropout(unittest.TestCase):
 
     def test_forward_testTime(self):
         drop_layer = Dropout.Dropout(0.5)
-        drop_layer.phase = Base.Phase.test
+        drop_layer.phase = "test"
         output = drop_layer.forward(self.input_tensor)
 
         self.assertEqual(np.max(output), 1.)
@@ -1056,7 +1056,7 @@ class TestBatchNorm(unittest.TestCase):
     def test_forward_test_phase(self):
         layer = BatchNormalization.BatchNormalization(self.input_tensor.shape[-1])
         layer.forward(self.input_tensor)
-        layer.phase = Base.Phase.test
+        layer.phase = "test"
 
         output = layer.forward((np.zeros_like(self.input_tensor)))
 
@@ -1072,7 +1072,7 @@ class TestBatchNorm(unittest.TestCase):
     def test_forward_test_phase_convolutional(self):
         layer = BatchNormalization.BatchNormalization(self.channels)
         layer.forward(self.input_tensor_conv)
-        layer.phase = Base.Phase.test
+        layer.phase = "test"
 
         output = layer.forward((np.zeros_like(self.input_tensor_conv)))
 

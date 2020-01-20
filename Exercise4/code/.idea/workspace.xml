@@ -39,8 +39,8 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for NeuralNetworkTests.TestLSTM">
-    <configuration name="pytest for NeuralNetworkTests.TestBatchNorm" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest for NeuralNetworkTests.TestNeuralNetwork.test_iris_data_with_batchnorm">
+    <configuration name="pytest for NeuralNetworkTests.TestBatchNorm.test_forward_test_phase_convolutional" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -49,13 +49,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_keywords" value="&quot;test_forward_test_phase_convolutional&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;NeuralNetworkTests.TestBatchNorm&quot;" />
+      <option name="_new_target" value="&quot;NeuralNetworkTests.TestBatchNorm.test_forward_test_phase_convolutional&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for NeuralNetworkTests.TestBatchNorm.test_gradient" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for NeuralNetworkTests.TestConvNet" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,11 +66,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;NeuralNetworkTests.TestBatchNorm.test_gradient&quot;" />
+      <option name="_new_target" value="&quot;NeuralNetworkTests.TestConvNet&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for NeuralNetworkTests.TestLSTM" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for NeuralNetworkTests.TestConvNet.test_digit_batch_norm" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,13 +79,13 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_keywords" value="&quot;test_digit_batch_norm&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;NeuralNetworkTests.TestLSTM&quot;" />
+      <option name="_new_target" value="&quot;NeuralNetworkTests.TestConvNet.test_digit_batch_norm&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for NeuralNetworkTests.TestSigmoid" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for NeuralNetworkTests.TestNeuralNetwork.test_iris_data_with_batchnorm" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,9 +94,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_keywords" value="&quot;test_iris_data_with_batchnorm&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;NeuralNetworkTests.TestSigmoid&quot;" />
+      <option name="_new_target" value="&quot;NeuralNetworkTests.TestNeuralNetwork.test_iris_data_with_batchnorm&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -117,11 +117,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestLSTM" />
-        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestBatchNorm.test_gradient" />
-        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestBatchNorm" />
+        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestNeuralNetwork.test_iris_data_with_batchnorm" />
         <item itemvalue="Python tests.pytest in NeuralNetworkTests.py" />
-        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestSigmoid" />
+        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestConvNet" />
+        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestConvNet.test_digit_batch_norm" />
+        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestBatchNorm.test_forward_test_phase_convolutional" />
       </list>
     </recent_temporary>
   </component>
@@ -137,16 +137,5 @@
       <updated>1574345429727</updated>
     </task>
     <servers />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Layers/BatchNormalization.py</url>
-          <line>97</line>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>

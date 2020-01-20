@@ -57,6 +57,8 @@ class BatchNormalization(Base.base):
         if self.phase == Base.Phase.test:
             input_tensor -= self.preMean
             input_tensor /= np.sqrt(self.preVariance + np.finfo(float).eps)
+            if len(self.input_shape) is 4:
+                input_tensor = self.reformat(input_tensor)
             return input_tensor
 
         # Normalization
@@ -68,6 +70,7 @@ class BatchNormalization(Base.base):
         self.normed_input_tensor = output_tensor
 
         output_tensor = self.weights * output_tensor + self.bias
+
         if len(self.input_shape) is 4:
             # reverse
             output_tensor = self.reformat(output_tensor)

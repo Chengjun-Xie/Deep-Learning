@@ -15,7 +15,7 @@ class FullyConnected(Base.base):
         self.weights = np.random.rand(self.input_size + 1, self.output_size )
 
         # returns the gradient with respect to the weights, after they have been calculated in the backward-pass
-        self.gradient_weights = np.zeros((self.output_size, self.input_size))
+        self.gradient_weights = np.zeros((self.input_size + 1, self.output_size))
         self.X = None
 
     def get_gradient_weights(self):
@@ -71,7 +71,6 @@ class FullyConnected(Base.base):
         # store x to gradient_weight for backward propagation
 
         if len(input_tensor.shape) is 1:
-            z = z[0]
             x = np.expand_dims(x, axis=0)
         self.X = np.copy(x.T)
         return z
@@ -86,8 +85,10 @@ class FullyConnected(Base.base):
     """
     def backward(self, error_tensor):
         # memory layout: w.T(t+1) = w.T(t) - eta * X * En.T
+        reverse = False
         if len(error_tensor.shape) is 1:
             error_tensor = np.expand_dims(error_tensor, axis=0)
+            reverse = True
         self.gradient_weights = self.X.dot(error_tensor)
 
         # weights_backward ∈ n*m
@@ -98,7 +99,7 @@ class FullyConnected(Base.base):
         if self._optimizer is not None:
             self.weights = self._optimizer.calculate_update(self.weights, self.gradient_weights)
 
-        if len(error_tensor.shape) is 1:
+        if reverse:
             error_tensor = error_tensor[0]
         return error_tensor
 
