@@ -24,8 +24,8 @@ class LSTM(Base.base):
 
         self.hidden_state = None
         self.cell_state = None
-        self.preHidden_state_forward = None
-        self.preHidden_state_backward = None
+        self.preHidden_state_forward = np.zeros(self.hidden_size)
+        self.preHidden_state_backward = np.zeros(self.hidden_size)
         self.preCell_state_forward = np.zeros(self.hidden_size)
         self.preCell_state_backward = np.zeros(self.hidden_size)
         self.first_update = True
@@ -54,6 +54,8 @@ class LSTM(Base.base):
         self.forget_tensor = None
 
         self.cell_tensor = None
+        self.log = None
+
 
 
     @property
@@ -91,7 +93,6 @@ class LSTM(Base.base):
     def forward(self, input_tensor):
         if self.first_update:
             # initialize cell state tensor
-            self.cell_state = np.zeros((input_tensor.shape[0] + 1, self.hidden_size))
             self.first_update = False
 
             for t in range(input_tensor.shape[0]):
@@ -107,13 +108,17 @@ class LSTM(Base.base):
                 self.first_X.append(np.array(0))
                 self.final_X.append(np.array(0))
 
-        if not self.__memorize or self.preHidden_state_forward is None:
-            # switch between TBPTT and BPTT
-            self.hidden_state = np.zeros((input_tensor.shape[0] + 1, self.hidden_size))
-            self.cell_state = np.zeros((input_tensor.shape[0] + 1, self.hidden_size))
-        else:
+        self.hidden_state = np.zeros((input_tensor.shape[0] + 1, self.hidden_size))
+        self.cell_state = np.zeros((input_tensor.shape[0] + 1, self.hidden_size))
+
+
+        # switch between TBPTT and BPTT
+        if self.__memorize:
             self.hidden_state[0] = self.preHidden_state_forward
             self.cell_state[0] = self.preCell_state_forward
+        else:
+            self.preHidden_state_forward = np.zeros(self.hidden_size)
+            self.preCell_state_forward = np.zeros(self.hidden_size)
 
         # initialize
         output_tensor = np.zeros((input_tensor.shape[0], self.output_size))
@@ -123,7 +128,7 @@ class LSTM(Base.base):
         self.update_tensor = np.zeros((input_tensor.shape[0], self.hidden_size))
         self.forget_tensor = np.zeros((input_tensor.shape[0], self.hidden_size))
         self.cell_tensor = np.zeros((input_tensor.shape[0], self.hidden_size))
-
+        self.log = np.zeros((input_tensor.shape[0], self.hidden_size))
         for t in range(input_tensor.shape[0]):
             # for the Notation:
             # self.hidden_state[t] ---> hidden_state at time t-1
@@ -132,7 +137,10 @@ class LSTM(Base.base):
 
             # Concatenate hidden_state and input ---> [ht−1,xt]
             concatenated_tensor = np.hstack((self.hidden_state[t], input_tensor[t]))
+
+            concatenated_tensor = concatenated_tensor.reshape(1, concatenated_tensor.shape[0])
             four_tensors = self.first_layer.forward(concatenated_tensor)
+            four_tensors = four_tensors[0]
             self.first_X[t] = self.first_layer.X    # store the gradient w.r.t. weights
 
             # spilt the output of the first FC layer
@@ -169,7 +177,10 @@ class LSTM(Base.base):
             self.hidden_state[t + 1] = self.preHidden_state_forward
 
             # output :yt = σ (Wy ·ht + by)
-            output_tensor[t] = self.final_layer.forward(self.hidden_state[t + 1])
+            hidden_temp = self.hidden_state[t + 1].reshape(1, self.hidden_size)
+            output_temp = self.final_layer.forward(hidden_temp)
+            output_tensor[t] = output_temp[0]
+
             self.final_X[t] = self.final_layer.X    # store the gradient w.r.t. weights
             output_tensor[t] = self.sigmoid_final[t].forward(output_tensor[t])
 
@@ -192,9 +203,12 @@ class LSTM(Base.base):
             # == compute gradient of output_gate and cell state ==
             # gradient w.r.t to output： δht = δyt * δσ + ht
             gradient_final = self.sigmoid_final[t].backward(error_tensor[t])
-            self.final_layer.X = self.final_X[t]                                    # load the gradient w.r.t. weights
+            self.final_layer.X = self.final_X[t]                                  # load the gradient w.r.t. weights
 
+            gradient_final = gradient_final.reshape(1, self.output_size)
             gradient_hidden = self.final_layer.backward(gradient_final)
+            gradient_hidden = gradient_hidden[0]
+
             gradient_final_layer.append(self.final_layer.get_gradient_weights())  # read gradient weights
             gradient_hidden += self.preHidden_state_backward
 
@@ -216,7 +230,7 @@ class LSTM(Base.base):
 
             # gradient w.r.t. temp cell state: δ˜Ct = δct * it
             gradient_cell_tensor = gradient_cell * self.update_tensor[t]
-            gradient_cell_tensor = self.tanh_hidden[t].backward(gradient_cell_tensor)
+            gradient_cell_tensor = self.tanh_cell[t].backward(gradient_cell_tensor)
 
             # gradient w.r.t. forget gate: δft = δCt * Ct-1
             gradient_forget = gradient_cell * self.cell_state[t]
@@ -230,8 +244,11 @@ class LSTM(Base.base):
                                               gradient_update,
                                               gradient_cell_tensor,
                                               gradient_output_gate))
-            self.first_layer.X = self.first_X[t]                                    # load the gradient w.r.t. weights
+
+            self.first_layer.X = self.first_X[t]    # load the gradient w.r.t. weights
+            four_gradient_tensors = four_gradient_tensors.reshape(1, four_gradient_tensors.shape[0])
             gradient_input = self.first_layer.backward(four_gradient_tensors)
+            gradient_input = gradient_input[0]
             gradient_first_layer.append(self.first_layer.get_gradient_weights())    # read gradient weights
 
             output[t] = gradient_input[self.hidden_size:]
@@ -247,7 +264,6 @@ class LSTM(Base.base):
         self.final_layer.gradient_weights = gradient_final_layer
 
         if self._optimizer is not None:
-
             self.first_layer.weights = self._optimizer.calculate_update(self.first_layer.weights,
                                                                         gradient_first_layer)
             self.final_layer.weights = self._optimizer.calculate_update(self.final_layer.weights,

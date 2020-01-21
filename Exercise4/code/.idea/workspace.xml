@@ -22,6 +22,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Vorlesungen\Deep learning(new version)\Exercise\Exercise4\code" />
       <recent name="D:\Vorlesungen\Deep learning(new version)\Exercise\Exercise3\code" />
       <recent name="D:\Vorlesungen\Deep learning(new version)\Exercise\Exercise3\code\Optimization" />
       <recent name="D:\Vorlesungen\Deep learning(new version)\Exercise\Exercise3\code\Layers" />
@@ -39,23 +40,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest for NeuralNetworkTests.TestNeuralNetwork.test_iris_data_with_batchnorm">
-    <configuration name="pytest for NeuralNetworkTests.TestBatchNorm.test_forward_test_phase_convolutional" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Python tests.pytest in NeuralNetworkTests.py">
+    <configuration name="debug" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;test_forward_test_phase_convolutional&quot;" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;NeuralNetworkTests.TestBatchNorm.test_forward_test_phase_convolutional&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/debug.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for NeuralNetworkTests.TestConvNet" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for NeuralNetworkTests.TestLSTM" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -66,11 +73,11 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_keywords" value="&quot;&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;NeuralNetworkTests.TestConvNet&quot;" />
+      <option name="_new_target" value="&quot;NeuralNetworkTests.TestLSTM&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="pytest for NeuralNetworkTests.TestConvNet.test_digit_batch_norm" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+    <configuration name="pytest for NeuralNetworkTests.TestLSTM.test_gradient" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
       <module name="code" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -79,9 +86,9 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_keywords" value="&quot;test_digit_batch_norm&quot;" />
+      <option name="_new_keywords" value="&quot;test_gradient&quot;" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;NeuralNetworkTests.TestConvNet.test_digit_batch_norm&quot;" />
+      <option name="_new_target" value="&quot;NeuralNetworkTests.TestLSTM.test_gradient&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -117,11 +124,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestNeuralNetwork.test_iris_data_with_batchnorm" />
         <item itemvalue="Python tests.pytest in NeuralNetworkTests.py" />
-        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestConvNet" />
-        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestConvNet.test_digit_batch_norm" />
-        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestBatchNorm.test_forward_test_phase_convolutional" />
+        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestLSTM" />
+        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestLSTM.test_gradient" />
+        <item itemvalue="Python.debug" />
+        <item itemvalue="Python tests.pytest for NeuralNetworkTests.TestNeuralNetwork.test_iris_data_with_batchnorm" />
       </list>
     </recent_temporary>
   </component>

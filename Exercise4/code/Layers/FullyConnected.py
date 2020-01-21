@@ -1,18 +1,16 @@
 import numpy as np
 from Optimization import Optimizers
-from Layers import Base
 
 
-class FullyConnected(Base.base):
+class FullyConnected:
     def __init__(self, input_size, output_size):
-        super().__init__()
-        self.input_size = input_size    # n
+        self.input_size = input_size  # n
         self.output_size = output_size  # m
         self._optimizer = None  # optimizations method
 
         # The member for the weights and biases should be named weights
         # weights ∈ (n+1)*m
-        self.weights = np.random.rand(self.input_size + 1, self.output_size )
+        self.weights = np.random.rand(self.input_size + 1, self.output_size)
 
         # returns the gradient with respect to the weights, after they have been calculated in the backward-pass
         self.gradient_weights = np.zeros((self.input_size + 1, self.output_size))
@@ -31,14 +29,15 @@ class FullyConnected(Base.base):
 
     """
      reinitializing its weights and bias
-     
+
      For fully connected layers: 
      “fan_in”: input dimension of the weights 
      “fan_out”: output dimension of the weights
-    
+
      @param{weights_initializer} pass in a object of Initializer
      @param{bias_initializer} pass in a object of Initializer
     """
+
     def initialize(self, weights_initializer, bias_initializer):
         weights_shape = (self.input_size, self.output_size)
         weights_fan_in = self.input_size
@@ -54,24 +53,20 @@ class FullyConnected(Base.base):
 
     """
     returns the input tensor for the next layer.
-    
+
     @param{input_tensor} ∈ batch_size * input_size
     @return ∈  batch_size * output_size
     """
+
     def forward(self, input_tensor):
         # Add a bias unit to x∈RN by adding a dimension with xn+1 = 1
         # memory layout: X.T * W.T = Y.T
-        if len(input_tensor.shape) is 1:
-            x = np.hstack((input_tensor, 1))
-        else:
-            x = np.ones((input_tensor.shape[0], 1))
-            x = np.hstack((input_tensor, x))
+        x = np.ones((input_tensor.shape[0], 1))
+        x = np.hstack((input_tensor, x))
         z = x.dot(self.weights)
 
         # store x to gradient_weight for backward propagation
 
-        if len(input_tensor.shape) is 1:
-            x = np.expand_dims(x, axis=0)
         self.X = np.copy(x.T)
         return z
 
@@ -83,12 +78,9 @@ class FullyConnected(Base.base):
     @param{error_tensor} ∈ batch_size * output_size
     @return ∈ batch_size * input_size
     """
+
     def backward(self, error_tensor):
         # memory layout: w.T(t+1) = w.T(t) - eta * X * En.T
-        reverse = False
-        if len(error_tensor.shape) is 1:
-            error_tensor = np.expand_dims(error_tensor, axis=0)
-            reverse = True
         self.gradient_weights = self.X.dot(error_tensor)
 
         # weights_backward ∈ n*m
@@ -96,10 +88,8 @@ class FullyConnected(Base.base):
         weights_backward = self.weights[:self.input_size, :]
         error_tensor = error_tensor.dot(weights_backward.T)
 
-        if self._optimizer is not None:
+        if (self._optimizer != None):
             self.weights = self._optimizer.calculate_update(self.weights, self.gradient_weights)
 
-        if reverse:
-            error_tensor = error_tensor[0]
         return error_tensor
 
