@@ -83,12 +83,11 @@ class Trainer:
         sum_loss = 0.0
         length = len(self._train_dl)
 
-        for i, data in enumerate(self._train_dl, 0):
+        for i, data in enumerate(tqdm(self._train_dl, desc="training"), 0):
             inputs, labels = data
             inputs, labels = inputs.to(device), labels.to(device)
             loss = self.train_step(inputs, labels)
             sum_loss += loss
-            print("-> iter: %d \t| loss: %.03f" % (i + 1, loss))
 
         return sum_loss / length
 
@@ -111,7 +110,7 @@ class Trainer:
 
         with t.no_grad():
             self._model.eval()
-            for data in self._val_test_dl:
+            for data in tqdm(self._val_test_dl, desc="testing"):
                 inputs, labels = data
                 inputs, labels = inputs.to(device), labels.to(device)
                 loss, prediction = self.val_test_step(inputs, labels)

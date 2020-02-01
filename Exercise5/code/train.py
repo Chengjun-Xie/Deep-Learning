@@ -9,7 +9,7 @@ import resnet
 
 # set up data loading for the training and validation set using t.utils.data.DataLoader and the methods implemented in data.py
 #TODO： challenge point -> Batchsize
-train_dl = t.utils.data.DataLoader(get_train_dataset(), batch_size=20)
+train_dl = t.utils.data.DataLoader(get_train_dataset(), batch_size=32)
 val_dl = t.utils.data.DataLoader(get_validation_dataset(), batch_size=1)
 data = ChallengeDataset()
 # set up your model

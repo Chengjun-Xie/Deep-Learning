@@ -79,7 +79,7 @@ class ChallengeDataset(Dataset):
 def get_train_dataset():
     # TODO：challenge point -> data augmentation
     tf_obj = tv.transforms.Compose([tv.transforms.ToPILImage(),
-                                   tv.transforms.ToTensor(),
+                                       tv.transforms.ToTensor(),
                                    tv.transforms.Normalize(mean=train_mean, std=train_std)])
     return ChallengeDataset(phase="train", val_size=VAL_size, compose=tf_obj)
 
