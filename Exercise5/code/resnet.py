@@ -43,19 +43,6 @@ class ResBlock(nn.Module):
 
 class ResNet(nn.Module):
     def __init__(self, ResBlock):
-        """
-        ResNet18:
-            Conv2D(64, 7, 2)
-            BatchNorm()
-            ReLU() MaxPool(3, 2)
-            ResBlock(64, 1)
-            ResBlock(128, 2)
-            ResBlock(256, 2)
-            ResBlock(512, 2)
-            GlobalAvgPool()
-            Flatten()
-            FC(2)
-        """
         super(ResNet, self).__init__()
         self.conv1 = nn.Sequential(nn.Conv2d(3, 64, 7, 2, 1),
                                    nn.BatchNorm2d(64),

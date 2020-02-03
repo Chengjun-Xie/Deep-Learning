@@ -1,6 +1,7 @@
 import torch as t
 from sklearn.metrics import f1_score
 from tqdm.autonotebook import tqdm
+import numpy as np
 # from evaluation import create_evaluation
 
 class Trainer:
@@ -58,19 +59,20 @@ class Trainer:
         # -return the loss
         self._optim.zero_grad()
         out = self._model(x)
+        out = out.double()
         loss = self._crit(out, y)
         loss.backward()
         self._optim.step()
         return loss
-    
+
     def val_test_step(self, x, y):
         # predict
         # propagate through the network and calculate the loss and predictions
         # return the loss and the predictions
-        #TODO
         out = self._model(x)
+        out = out.double()
         loss = self._crit(out, y)
-        return loss, out
+        return loss, out.round()
         
     def train_epoch(self):
         # set training mode
@@ -83,7 +85,7 @@ class Trainer:
         sum_loss = 0.0
         length = len(self._train_dl)
 
-        for i, data in enumerate(tqdm(self._train_dl, desc="training"), 0):
+        for i, data in enumerate(tqdm(self._train_dl, desc='training'), 0):
             inputs, labels = data
             inputs, labels = inputs.to(device), labels.to(device)
             loss = self.train_step(inputs, labels)
@@ -104,17 +106,20 @@ class Trainer:
         # return the loss and print the calculated metrics
         self._model.eval()
         device = t.device("cuda" if self._cuda else "cpu")
-        sum_loss = 0.0
-        score = 0.0
+        sum_loss = 0
+        score = 0
         length = len(self._val_test_dl)
 
         with t.no_grad():
             self._model.eval()
-            for data in tqdm(self._val_test_dl, desc="testing"):
+            for data in tqdm(self._val_test_dl, desc='testing '):
                 inputs, labels = data
                 inputs, labels = inputs.to(device), labels.to(device)
                 loss, prediction = self.val_test_step(inputs, labels)
-                score += f1_score(labels, prediction)
+                score += f1_score(labels.cpu().numpy()[0],
+                                prediction.cpu().numpy()[0],
+                                average='macro')
+
                 sum_loss += loss
 
         sum_loss /= length
@@ -124,11 +129,10 @@ class Trainer:
     def fit(self, epochs=-1):
         assert self._early_stopping_cb is not None or epochs > 0
         # create a list for the train and validation losses, and create a counter for the epoch
-        train_loss = []
-        validation_loss = []
+        loss = [[], []]
         counter = 0
 
-        print("======= Epoch %.03d =======" % (counter + 1))
+        self._model.zero_grad()
         while True:
             # stop by epoch number
             # train for a epoch and then calculate the loss and metrics on the validation set
@@ -136,17 +140,19 @@ class Trainer:
             # use the save_checkpoint function to save the model for each epoch
             # check whether early stopping should be performed using the early stopping callback and stop if so
             # return the loss lists for both training and validation
-            if counter > epochs:
+            print("======= Epoch %.03d =======" % (counter + 1))
+            if counter >= epochs:
                 break
 
             t_loss = self.train_epoch()
-            v_loss, _ = self.val_test()
-            train_loss.append(t_loss)
-            validation_loss.append(v_loss)
+            v_loss, score = self.val_test()
+            loss[0].append(t_loss.cpu().detach().numpy())
+            loss[1].append(v_loss.cpu().detach().numpy())
 
             self.save_checkpoint(counter)
             self._early_stopping_cb.step(t_loss)
             if self._early_stopping_cb.should_stop():
                 break
             counter += 1
-        return train_loss, validation_loss
+            print("scroe:",score)
+        return np.array(loss)

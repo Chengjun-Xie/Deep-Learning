@@ -68,19 +68,23 @@ class ChallengeDataset(Dataset):
         It should calculate a weight for positive examples for each class
         :return: return it as a [torch.tensor]
         """
-        pos_weight = np.ones(2)
+        pos_weight = np.zeros(2)
         pos_weight[0] = (1 - np.array(self.hole_data.crack)).sum()
         pos_weight[0] /= np.array(self.hole_data.crack).sum()
-        pos_weight[0] = (1 - np.array(self.hole_data.inactive)).sum()
-        pos_weight[0] /= np.array(self.hole_data.inactive).sum()
+        pos_weight[1] = (1 - np.array(self.hole_data.inactive)).sum()
+        pos_weight[1] /= np.array(self.hole_data.inactive).sum()
         return torch.from_numpy(pos_weight)
 
 
 def get_train_dataset():
     # TODO：challenge point -> data augmentation
     tf_obj = tv.transforms.Compose([tv.transforms.ToPILImage(),
-                                       tv.transforms.ToTensor(),
-                                   tv.transforms.Normalize(mean=train_mean, std=train_std)])
+                                    tv.transforms.RandomAffine(180),
+                                    tv.transforms.CenterCrop(224),
+                                    tv.transforms.RandomHorizontalFlip(),
+                                    tv.transforms.RandomVerticalFlip(),
+                                    tv.transforms.ToTensor(),
+                                    tv.transforms.Normalize(mean=train_mean, std=train_std)])
     return ChallengeDataset(phase="train", val_size=VAL_size, compose=tf_obj)
 
 
