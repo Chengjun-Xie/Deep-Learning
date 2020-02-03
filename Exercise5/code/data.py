@@ -79,8 +79,7 @@ class ChallengeDataset(Dataset):
 def get_train_dataset():
     # TODO：challenge point -> data augmentation
     tf_obj = tv.transforms.Compose([tv.transforms.ToPILImage(),
-                                    tv.transforms.RandomAffine(180),
-                                    tv.transforms.CenterCrop(224),
+                                    # tv.transforms.CenterCrop(224),
                                     tv.transforms.RandomHorizontalFlip(),
                                     tv.transforms.RandomVerticalFlip(),
                                     tv.transforms.ToTensor(),
